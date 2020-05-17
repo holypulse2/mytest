@@ -79,7 +79,7 @@ class PizzaProducts extends Component {
           loader={<h4>Loading...</h4>}
         >
           
-          <div style={styleBeerCards} >
+          <div style={styleBeerCards}>
            {products && products.map((product, index) => (
             <ProductCard
               id={product.id}
