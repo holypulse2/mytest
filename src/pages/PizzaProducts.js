@@ -81,7 +81,7 @@ class PizzaProducts extends Component {
           
           <div style={styleBeerCards} >
            {products && products.map((product, index) => (
-            <ProductCard 
+            <ProductCard
               id={product.id}
               name={product.name} 
               src={product.image_url} 
