@@ -37,8 +37,8 @@ const ProductCard =({id, name, src, tagline, abv, description, food_pairing, add
 
   return(
     <div style={styleProductCard}>
-      <div style={{textAlign: 'center', border: 'solid 1px grey', borderRadius: '15%'}}>
-        <img alt='' src={src} style={{height: 80}} onClick={handleClickOpen} />
+      <div style={{textAlign: 'center', border: 'solid 1px grey', borderRadius: '15%'}} onClick={handleClickOpen}>
+        <img alt='' src={src} style={{height: 80}}  />
         <Dialog maxWidth="md" onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
           <div style={{height: '200px', width: '300px', padding: '15px'}}>
           <strong>{name}</strong> <br/>
@@ -70,4 +70,3 @@ const ProductCard =({id, name, src, tagline, abv, description, food_pairing, add
 };
 
   export default ProductCard;
-  
